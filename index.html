@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>YouTube Clone</title>
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <div class="box1">
+                <div class="navbar"><i class="fa-solid fa-bars"></i></div>
+                <div class="logo">
+                    <img src="https://www.youtube.com/img/desktop/supported_browsers/yt_logo_rgb_light.png" alt="logo">
+                </div>
+            </div>
+            <div class="input">
+                <div class="inp">
+                    <input type="text" class="searchinp" placeholder="Search">
+                    <button onclick="search()" class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="mic"><i class="fa-solid fa-microphone"></i></div>
+            </div>
+            <div class="right">
+                <div class="camera"><i class="fa-solid fa-video"></i></div>
+                <div class="boxes"><i class="fa-solid fa-table-cells"></i></div>
+                <div class="notification"><i class="fa-solid fa-bell"></i></div>
+                <div class="my"><i class="fa-solid fa-user"></i></div>
+            </div>
+        </nav>
+    </div>
+    <div class="body">
+        <div class="left">
+            <div class="list">
+                <p><i class="fa-solid fa-house"></i>HOME</p>
+                <p><i class="fa-solid fa-compass"></i>Explore</p>
+                <p><i class="fa-solid fa-play"></i>Shorts</p>
+                <p><i class="fa-solid fa-clapperboard"></i>Subscription</p>
+                <hr />
+                <p><i class="fa-solid fa-circle-play"></i>Library</p>
+                <p><i class="fa-solid fa-clock-rotate-left"></i>History</p>
+                <p><i class="fa-solid fa-film"></i>Your Video</p>
+                <p><i class="fa-solid fa-clock"></i>Watch later</p>
+                <p><i class="fa-solid fa-thumbs-up"></i>Liked Video</p>
+            </div>
+            <div class="listicons">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-compass"></i>
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-clapperboard"></i>
+                <hr class="hideicon"/>
+                <i class="hideicon fa-solid fa-circle-play"></i>
+                <i class="hideicon fa-solid fa-clock-rotate-left"></i>
+                <i class="hideicon fa-solid fa-film"></i>
+                <i class="hideicon fa-solid fa-clock"></i>
+                <i class="hideicon fa-solid fa-thumbs-up"></i>
+            </div>
+        </div>
+        <div class="righthand">
+            <div class="feed">
+                <p onclick="searchData('js')">JS</p>
+                <p onclick="searchData('css')">CSS</p>
+                <p onclick="searchData('html')">HTML</p>
+                <p onclick="searchData('react')">React</p>
+                <p onclick="searchData('node')">Node</p>
+                <p onclick="searchData('python')">Python</p>
+                <p onclick="searchData('c++')">C++</p>
+                <p onclick="searchData('c')">C#</p>
+                <p onclick="searchData('motivation')">Motivation</p>
+                <p onclick="searchData('football')">Football</p>
+                <p onclick="searchData('cricket')">Cricket</p>
+                <p onclick="searchData('olympic')">Olympic</p>
+                <p onclick="searchData('asia')">Asia</p>
+                <p onclick="searchData('news')">News</p>
+                <p onclick="searchData('cs')">CS</p>
+                <p onclick="searchData('coding')">Coding</p>
+                <p onclick="searchData('laptop')">Laptop</p>
+                <p onclick="searchData('school')">School</p>
+                <p onclick="searchData('movie')">Movies</p>
+                <p onclick="searchData('bollywood')">Bollywood</p>
+                <p onclick="searchData('hollywood')">Hollywood</p>
+            </div>
+            <div class="main"></div>
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
